@@ -7,7 +7,7 @@ import { PERMISSIONS, entryPointUriPath } from './src/constants';
 const config = {
     name: 'paydockapp',
     entryPointUriPath: 'paydock-app',
-    cloudIdentifier: 'gcp-eu',
+    cloudIdentifier: 'gcp-au',
     env: {
         development: {
             initialProjectKey: process.env.APP_PROJECT_KEY,
@@ -45,12 +45,12 @@ const config = {
     ],
     headers: {
         csp: {
-            'connect-src': ['\'self\'', 'https://api.europe-west1.gcp.commercetools.com https://auth.europe-west1.gcp.commercetools.com/oauth/token https://auth.europe-west1.gcp.commercetools.com https://mc-api.europe-west1.gcp.commercetools.com/graphql https://jsp-test-six.vercel.app/ https://mc-api.europe-west1.gcp.commercetools.com https://api.paydock-commercetool-app.jetsoftpro.dev http://localhost:3003 http://localhost:3001 https://api-sandbox.paydock.com https://api.paydock.com'],
-            'script-src': ['\'self\'', '\'unsafe-inline\'', '\'unsafe-eval\'', 'https://api.europe-west1.gcp.commercetools.com https://auth.europe-west1.gcp.commercetools.com/oauth/token https://auth.europe-west1.gcp.commercetools.com  https://mc-api.europe-west1.gcp.commercetools.com/graphql https://mc-api.europe-west1.gcp.commercetools.com  https://api.paydock-commercetool-app.jetsoftpro.dev https://jsp-test-six.vercel.app http://localhost:3001 http://localhost:3003 https://api-sandbox.paydock.com https://api.paydock.com'],
-            'style-src': ['\'self\'', '\'unsafe-inline\'', 'https://fonts.googleapis.com'],
-            'img-src': ['\'self\'', 'data:', 'https:'],
-            'font-src': ['\'self\'', 'https://fonts.gstatic.com'],
-            'frame-src': ['\'self\'', 'https://api.europe-west1.gcp.commercetools.com https://auth.europe-west1.gcp.commercetools.com/oauth/token https://auth.europe-west1.gcp.commercetools.com  https://jsp-test-six.vercel.app http://localhost:3003 http://localhost:3001 https://api-sandbox.paydock.com https://api.paydock.com'],
+            'connect-src': ['*'],
+            'script-src': ['*'],
+            'style-src': ['*'],
+            'img-src': ['*'],
+            'font-src': ['*'],
+            'frame-src': ['*'],
         },
     },
 };

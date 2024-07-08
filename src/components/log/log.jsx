@@ -1,3 +1,4 @@
+import React from 'react'
 import {useState, useEffect} from 'react';
 import Text from '@commercetools-uikit/text';
 import {Pagination} from '@commercetools-uikit/pagination';

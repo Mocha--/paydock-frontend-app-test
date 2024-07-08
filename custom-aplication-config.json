@@ -33,16 +33,10 @@
   },
   "headers": {
     "csp": {
-      "script-src": [
-        "'self'",
-        "'unsafe-inline'",
-        "'unsafe-eval'",
-        "https://auth.europe-west1.gcp.commercetools.com https://api.europe-west1.gcp.commercetools.com https://auth.europe-west1.gcp.commercetools.com/oauth/token https://api.paydock-commercetool-app.jetsoftpro.dev http://localhost:3003 http://localhost:3001"
+      "script-src": ["*"
       ],
       "content-src": [
-        "'self'",
-        "'unsafe-inline'",
-        "https://auth.europe-west1.gcp.commercetools.com https://api.europe-west1.gcp.commercetools.com https://auth.europe-west1.gcp.commercetools.com/oauth/token https://api.paydock-commercetool-app.jetsoftpro.dev http://localhost:3003 http://localhost:3001"
+        "*"
       ]
     }
   }
